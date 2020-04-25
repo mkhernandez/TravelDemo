@@ -1,0 +1,72 @@
+body {
+    font-family: 'Lobster', 'Sans Serif';
+}
+
+@media screen and (max-width: 576px) {
+    body .jumbotron {
+      background-size: 576px;
+      background-position: relative;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+      body .jumbotron {
+          background-size: 768px;
+          background-position: center;
+      }
+  }
+
+  @media screen and (max-width: 1000px) {
+      body .jumbotron {
+          background-size: 1000px;
+          background-position: center;
+      }
+  }
+
+.jumbotron-fluid {
+    background-image: url("../img/airport-man.jpg");
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+    position: relative;
+    color: black;
+    padding: 0;
+    height: 90vmin;
+    width: 100%;
+    margin-bottom: 0;
+
+    display: block;
+    
+}
+
+.col-md-6 {
+    text-align: center;
+}
+
+.img-fluid {
+    /* height: 75vh;
+    width: 75vw; */
+}
+
+.site-footer {
+    
+    background-color: blanchedalmond;
+}
+
+.sectionContent {
+    margin-top: 50px;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+.modalBtn {
+    border-radius: 21px;
+}
+
+#container {
+    width 100%;
+}
+

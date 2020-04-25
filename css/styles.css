@@ -8,7 +8,7 @@ body {
     background-size: cover;
     background-repeat: no repeat;
     background-position: center;
-    color: white;
+
     font-family: 'Lobster', 'Sans Serif';
 }
 
@@ -20,5 +20,23 @@ hr {
 
 .col-md-6 {
     padding-top: 200px;
-    /* text-align: center; */
+    color: white;
 }
+
+.faIcon {
+    
+    color: #9bfaf2;
+}
+
+.brand-content {
+    color:  blue !important;
+}
+
+.modalBtn {
+    border-radius: 21px;
+}
+
+.infoTextContent {
+    color: white;
+}
+

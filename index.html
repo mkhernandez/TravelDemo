@@ -14,6 +14,107 @@
         <title>Travel App Demo</title>
     </head>
     <body>
+        <div class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand brand-content" href="#"><i class="fa fa-bug faIcon" aria-hidden="false"></i> Travel Bug</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#travelApp" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="travelApp">
+                    <div class="navbar-nav mr-auto">
+                        <a class="nav-item nav-link" href="atHome.html">Home</a>
+                        <a class="nav-item nav-link" href="#">About</a>
+                        <a class="nav-item nav-link" href="#">Contact</a>
+                        <a class="nav-item nav-link" href="#">Browse</a>
+                    </div>
+                    <div class="nav navbar-nav">
+                        <a role="button" data-toggle="modal" data-target="#loginModal" class="btn btn-primary modalBtn" href="#">Log In</a>
+                        <a role="button" data-toggle="modal" data-target="#signupModal" class="btn btn-info ml-3 modalBtn" href="#">Sign Up</a>
+                    </div>
+                          
+                </div>
+            </div>
+        </div>
+
+        <div id="signupModal" class="modal fade" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Sign Up</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form action="">
+                                <div class="form-row">
+                                    <div class="form-group col-12">
+                                        <label class="sr-only" for="email">Enter email address</label>
+                                        <input class="form-control form-control-sm" type="email" id="email" name="email" placeholder="Enter email address" required>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label class="sr-only" for="password">Enter password</label>
+                                        <input class="form-control form-control-sm" type="password" name="password" id="password" placeholder="Enter password" required>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label class="sr-only" for="confirmPassword">Confirm password</label>
+                                        <input class="form-control form-control-sm" type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password" required>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox">
+                                            <label class="form-check-label" for="">Remember me</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row justify-content-center">
+                                    <button type="button" class="btn btn-secondary btn-sm modalBtn">Cancel</button>
+                                    <button type="submit" class="btn btn-primary btn-sm modalBtn ml-2">Sign up</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Log In</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form action="">
+                                <div class="form-row">
+                                    <div class="form-group col-12">
+                                        <label class="sr-only" for="loginEmail">Enter email address</label>
+                                        <input class="form-control form-control-sm" type="email" name="email" id="loginEmail" placeholder="Email address" required>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label class="sr-only" for="loginPassword">Enter password</label>
+                                        <input class="form-control form-control-sm" type="password" name="password" id="loginPassword" placeholder="Password" required>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox">
+                                            <label class="form-check-label" for="">Remember me</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row justify-content-center">
+                                    <button type="button" class="btn btn-secondary btn-sm modalBtn">Cancel</button>
+                                    <button type="submit" class="btn btn-primary btn-sm modalBtn ml-2">Log In</button>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -21,13 +122,38 @@
                     <h3>Where travel buddies unite!</h3>
                 <div class="col-12 pl-0">
                     <hr>
-                </div>
-                    
-                    <button class="btn btn-primary">Get Started!</button>
+                </div>   
+                    <button class="btn btn-info">Get Started!</button>
                 </div>
             </div>
         </div>
         
+        <div class="container-fluid mt-5 pt-5">
+            <footer class="site-footer mt-5 pt-5">
+                <div class="row">
+                    <div class="col-4 col-sm-2 offset-1 my-auto">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled"> 
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Sites</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-5 text-center my-auto">
+                        <h5>Social</h5>
+                        <a class="btn btn-social-icon btn-instagram" href="https://instagram.com"><i class="fa fa-instagram"></i> </a>
+                        <a class="btn btn-social-icon btn-facebook" href="https://facebook.com"><i class="fa fa-facebook"></i> </a>
+                        <a class="btn btn-social-icon btn-twitter" href="https://twitter.com"><i class="fa fa-twitter"></i> </a>
+                        <a class="btn btn-social-icon btn-google" href="https://youtube.com"><i class="fa fa-youtube"></i> </a>
+                    </div>
+                    <div class="col-sm-4 text-center my-auto">
+                        <a role="button" class="btn btn-link infoTextContent" href="tel:+01234567890"> <i class="fa fa-phone fa-lg text-info"> </i> 0-123-456-7890 </a> <br />
+                        <a role="button" class="btn btn-link infoTextContent" href="mailto:contact@travelbug.com"> <i class="fa fa-envelope fa-la text-info"> </i> contact@travelbug.com </a>
+                    </div>
+                </div>
+            </footer>     
+         </div>
 
 
 
