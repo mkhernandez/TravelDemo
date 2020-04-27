@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        <link rel="stylesheet" href="css/about.css" />
+        <link rel="stylesheet" type="text/javascript" href="js/scripts.js">
+        <title>Travel App Demo</title>
+    </head>
+    <body>
+        
+        <div class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand brand-content" href="index.html"><i class="fa fa-bug faIcon" aria-hidden="false"></i> Travel Bug</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#travelApp" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="travelApp">
+                    <div class="navbar-nav mr-auto">
+                        <a class="nav-item nav-link" href="atHome.html">Home</a>
+                        <a class="nav-item nav-link" href="about.html">About</a>
+                        <a class="nav-item nav-link" href="#">Contact</a>
+                        <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+                    </div>
+                    <div class="nav navbar-nav">
+                        <a role="button" data-toggle="modal" data-target="#loginModal" class="btn btn-primary modalBtn" href="#">Log In</a>
+                        <a role="button" data-toggle="modal" data-target="#signupModal" class="btn btn-info ml-3 modalBtn" href="#">Sign Up</a>
+                    </div>
+                          
+                </div>
+            </div>
+        </div>
+
+         <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
