@@ -2,6 +2,10 @@ body {
     font-family: 'Lobster', 'Sans Serif';
 }
 
+h3 {
+    border-bottom: 1px ridge blue;
+}
+
 @media screen and (max-width: 576px) {
     body .jumbotron {
       background-size: 576px;
@@ -23,6 +27,15 @@ body {
       }
   }
 
+  .img-fluid {
+      background-position: relative;
+      background-repeat: no repeat;
+      background-size: 100%;
+      position: relative;
+      width: 100%;
+      height: 80vmin;
+  }
+
 .jumbotron-fluid {
     background-image: url("../img/airport-man.jpg");
     background-position: relative;
@@ -40,26 +53,9 @@ body {
     
 }
 
-.col-md-6 {
-    text-align: center;
-}
-
-.img-fluid {
-    /* height: 75vh;
-    width: 75vw; */
-}
-
 .site-footer {
     
     background-color: blanchedalmond;
-}
-
-.sectionContent {
-    margin-top: 50px;
-    margin-right: 0;
-    margin-bottom: 0;
-    padding-top: 50px;
-    padding-right: 50px;
 }
 
 .modalBtn {

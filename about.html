@@ -11,32 +11,91 @@
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
         <link rel="stylesheet" href="css/about.css" />
-        <link rel="stylesheet" type="text/javascript" href="js/scripts.js">
+        <script type="text/javascript" src="js/scripts.js"></script>
         <title>Travel App Demo</title>
     </head>
     <body>
         
-        <div class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand brand-content" href="index.html"><i class="fa fa-bug faIcon" aria-hidden="false"></i> Travel Bug</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#travelApp" >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="travelApp">
-                    <div class="navbar-nav mr-auto">
-                        <a class="nav-item nav-link" href="atHome.html">Home</a>
-                        <a class="nav-item nav-link" href="about.html">About</a>
-                        <a class="nav-item nav-link" href="#">Contact</a>
-                        <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+        <div class="container">
+            <div class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand brand-content" href="index.html"><i class="fa fa-bug faIcon" aria-hidden="false"></i> Travel Bug</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#travelApp" >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="travelApp">
+                        <div class="navbar-nav mr-auto">
+                            <a class="nav-item nav-link" href="atHome.html">Home</a>
+                            <a class="nav-item nav-link" href="about.html">About</a>
+                            <a class="nav-item nav-link" href="#">Contact</a>
+                            <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+                        </div>
+                        <div class="nav navbar-nav">
+                            <a role="button" data-toggle="modal" data-target="#loginModal" class="btn btn-primary modalBtn" href="#">Log In</a>
+                            <a role="button" data-toggle="modal" data-target="#signupModal" class="btn btn-info ml-3 modalBtn" href="#">Sign Up</a>
+                        </div>
+                              
                     </div>
-                    <div class="nav navbar-nav">
-                        <a role="button" data-toggle="modal" data-target="#loginModal" class="btn btn-primary modalBtn" href="#">Log In</a>
-                        <a role="button" data-toggle="modal" data-target="#signupModal" class="btn btn-info ml-3 modalBtn" href="#">Sign Up</a>
-                    </div>
-                          
                 </div>
             </div>
         </div>
+        
+
+        <div class="container-fluid mt-5 pt-4 px-0">
+            <div class="row mx-0">
+                <div class="col text-center">
+                    <h2>About Us</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-sm-6 mb-3 mb-sm-0 mx-auto pb-0 px-0 text-center align-items-center justify-content-center d-flex flex-column section-content">
+                    <h3 class="pb-2">What We Do</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla magni, adipisci expedita obcaecati nesciunt accusantium minus nihil harum aliquid ad odit officia cum est ducimus, dolores ratione asperiores minima? Consequatur?</p>
+                </div>
+                <div class="col-12 col-sm-6 mb-3 mb-sm-0 px-0">
+                    <img class="img-fluid" src="img/men-infrontof-monitors-laptops.jpg" alt="men-infrontof-monitors-laptops">
+                </div>
+                <div class="col-12 col-sm-6 mb-3 px-0 order-sm-12 text-center align-items-center justify-content-center d-flex flex-column section-content">
+                    <h3 class="pb-2">How Do We Do It</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem a, facilis reprehenderit dolorum adipisci assumenda exercitationem consequatur necessitatibus dignissimos corrupti, ab autem consectetur cupiditate similique mollitia cumque temporibus? Vero, sit?</p>
+                </div>
+                <div class="col-12 col-sm-6 mb-3 px-0 order-sm-1">
+                    <img class="img-fluid" src="img/hands-all-in.jpg" alt="hands-all-in">
+                </div>
+                
+            </div>
+            <div class="row justify-content-center">
+                <div class="col col-sm-6 text-center section-content">
+                    <h3 class="pb-2">Why Do We Do It</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident aliquam repellendus perspiciatis itaque necessitatibus voluptatum sint a libero recusandae harum natus, quisquam accusantium vel eaque reiciendis sapiente pariatur ratione.</p>
+                </div>
+                
+            </div>
+
+            <div id="aboutCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators"> 
+                    <li data-target="" data-slide-to="0" class="active"></li>
+                    <li data-target="" data-slide-to="1"></li>
+                    <li data-target="" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/carousel-great-wall.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/carousel-italy.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/carousel-switzerland.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+
+        </footer>
 
          <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
          <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
