@@ -8,24 +8,37 @@ h3 {
 
 @media screen and (max-width: 576px) {
     body .jumbotron {
-      background-size: 576px;
-      background-position: relative;
+        background-size: 576px;
+        background-position: relative;
+        background-size: 100%;
+        position: relative;
+        height: 100%;
+        max-width: 100vw;
+        
     }
-  }
+}
 
-  @media screen and (max-width: 768px) {
-      body .jumbotron {
-          background-size: 768px;
-          background-position: center;
-      }
-  }
+@media screen and (max-width: 768px) {
+    body .jumbotron {
+        background-size: 768px;
+        background-position: relative;
+        background-size: 100%;
+        position: relative;
+        height: 100%;
+        max-width: 100vw;
+    }
+}
 
-  @media screen and (max-width: 1000px) {
-      body .jumbotron {
-          background-size: 1000px;
-          background-position: center;
-      }
-  }
+@media screen and (max-width: 1000px) {
+    body .jumbotron {
+        background-size: 1000px;
+        background-position: relative;
+        background-size: 100%;
+        position: relative;
+        height: 100%;
+        max-width: 100vw;
+    }
+}
 
   .img-fluid {
       background-position: relative;
@@ -36,19 +49,18 @@ h3 {
       height: 80vmin;
   }
 
-.jumbotron-fluid {
+.jumbotron {
     background-image: url("../img/airport-man.jpg");
     background-position: relative;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     overflow: hidden;
     position: relative;
     color: black;
     padding: 0;
     height: 90vmin;
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 0;
-
     display: block;
     
 }
@@ -58,11 +70,9 @@ h3 {
     background-color: blanchedalmond;
 }
 
-.modalBtn {
+.navBtn {
     border-radius: 21px;
 }
 
-#container {
-    width 100%;
-}
+
 

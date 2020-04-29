@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <title>Travel App Demo</title>
+
+    </head>
+    <body>
+        <div class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand brand-content" href="#"><i class="fa fa-bug faIcon" aria-hidden="false"></i> Travel Bug</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#travelApp" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="travelApp">
+                    <div class="navbar-nav mr-auto">
+                        <a class="nav-item nav-link" href="atHome.html">Home</a>
+                        <a class="nav-item nav-link" href="about.html">About</a>
+                        <a class="nav-item nav-link" href="#">Contact</a>
+                        <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+                    </div>
+                    <div class="nav navbar-nav">
+                        <a role="button"  class="btn btn-primary navBtn" href="signin.html">Log In</a>
+                        <a role="button"  class="btn btn-info ml-3 navBtn" href="signin.html">Sign Up</a>
+                    </div>
+                          
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5 pt-5">
+            <div class="row text-center align-items-center justify-content-center d-flex flex-column">
+                <div class="col-12 col-sm-6">
+                    <div class="header">
+                        <h2 class="mb-4">Login</h2>
+                    </div>
+                    <form action="">
+                        <div class="form-group row mx-sm-auto">
+                            <label class="col-3 col-sm-3 col-form-label ml-1" for="emailInput">Email</label>
+                            <div class="col-7 col-sm-7 col-md-9 col-lg-6">
+                                <input class="form-control form-control-sm" type="email" id="emailInput" name="email" placeholder="Email Address" required>
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            
+                        </div>
+                        <div class="form-group row mx-sm-auto">
+                            <label class="col-3 col-sm-3 col-form-label ml-1" for="passwordInput">Password</label>
+                            <div class="col-7 col-sm-7 col-md-9 col-lg-6">
+                                <input class="form-control form-control-sm" type="password" id="passwordInput" name="password" placeholder="Password" required>
+                            </div>
+                        </div>
+                        
+                        <div class="col-5 offset-3 offset-sm-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" >
+                                <label class="form-check-label" for="">Remember me</label> <br>
+                            </div>
+                        </div>
+                        
+                    </form>
+                    <div>
+                        <button class="btn btn-info col-2 col-sm-3 mt-2" type="submit">Submit</button>
+                    </div>
+                    
+                    <div class="d-flex flex-row mt-5">
+                        <div class="col-4">
+                            <hr >
+                        </div>
+                        <div class="col-4">
+                            <h5>OR</h5>
+                        </div>
+                        <div class="col-4">
+                            <hr>
+                        </div>
+                    </div>
+
+                    <div class="header mt-5">
+                        <h2 class="mb-4">Sign Up</h2>
+                    </div>
+                    <form action="">
+                        <div class="form-group row mx-sm-auto">
+                            <label class="col-3 col-sm-3 col-form-label ml-1" for="firstName">First Name</label>
+                            <div class="col-7 col-sm-7 col-md-9 col-lg-6">
+                                <input class="form-control form-control-sm" type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group row mx-sm-auto">
+                            <label class="col-3 col-sm-3 col-form-label ml-1" for="lastName">Last Name</label>
+                            <div class="col-7 col-sm-7 col-md-9 col-lg-6">
+                                <input class="form-control form-control-sm" type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group row mx-sm-auto">
+                            <label class="col-3 col-sm-3 col-form-label ml-1" for="email">Email</label>
+                            <div class="col-7 col-sm-7 col-md-9 col-lg-6">
+                                <input class="form-control form-control-sm" type="email" name="email" id="email" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                        <div class="form-group row mx-sm-auto">
+                            <label class="col-3 col-sm-3 col-form-label ml-1" for="password">Password</label>
+                            <div class="col-7 col-sm-7 col-md-9 col-lg-6">
+                                <input class="form-control form-control-sm" type="password" name="password" id="password" placeholder="Password">
+                                <small id="passwordHelp" class="form-text text-muted">Password must include one lowercase letter, one uppercase letter, one number, and one special character(@,!,#,$,etc).</small>
+                            </div>
+                        </div>
+                        <div class="form-group row mx-sm-auto">
+                            <label class="col-3 col-sm-3 col-form-label ml-1" for="confirmPassword">Confirm Password</label>
+                            <div class="col-7 col-sm-7 col-md-9 col-lg-6">
+                                <input class="form-control form-control-sm" type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+                            </div>
+                        </div>
+                        <div class="col-5 offset-3 offset-sm-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" >
+                                <label class="form-check-label" for="">Remember me</label> <br>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button class="col-2 col-sm-3 btn btn-info mt-2 mb-5" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
