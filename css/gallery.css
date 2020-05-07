@@ -1,0 +1,47 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.galleryContent {
+    border-bottom: 1px ridge lightskyblue;
+    padding-bottom: 0.75rem;
+}
+
+/* .imgContent {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    vertical-align: middle;
+    background-size: cover;
+    background-size: 100% 100%;
+    
+} */
+
+.crop {
+    height: 400px;
+    overflow: hidden;
+}
+
+.crop img {
+    float: left;
+    height: 300px;
+    width: 100%;
+}
+
+.crop .img-thumbnail {
+    float: left;
+    height: 300px;
+    width: 100%;
+}
+
+.navBtn {
+    border-radius: 21px;
+}
+
+.site-footer {
+    border-top: 1px ridge lightsteelblue;
+}

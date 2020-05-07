@@ -17,7 +17,7 @@
     <body>
         
         <header class="mb-5 pb-5">
-            <div class="navbar navbar-expand-sm navbar-light bg-light fixed-top mb-5">
+            <div class="navbar navbar-expand-sm navbar-light bg-light fixed-top mr-0 pr-0 mb-5">
                 <div class="container-fluid">
                     <a class="navbar-brand brand-content" href="index.html"><i class="fa fa-bug faIcon" aria-hidden="false"></i> Travel Bug</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#travelApp" >
@@ -31,8 +31,8 @@
                             <a class="nav-item nav-link" href="gallery.html">Gallery</a>
                         </div>
                         <div class="nav navbar-nav navbar-right">
-                            <a role="button"  class="btn btn-primary navBtn" href="signin.html">Log In</a>
-                            <a role="button"  class="btn btn-info ml-2 ml-sm-3 navBtn" href="signin.html">Sign Up</a>
+                            <a role="button"  class="btn btn-outline-primary navBtn" href="signin.html">Log In</a>
+                            <a role="button"  class="btn btn-outline-info ml-2 ml-sm-3 navBtn" href="signin.html">Sign Up</a>
                         </div>
                               
                     </div>
@@ -40,28 +40,59 @@
             </div>
         </header>
 
-        <div class="container mt-5 pt-5">
+        <div class="container-fluid mt-5 pt-5">
+            <div class="col-12 col-sm-3 mb-5 galleryContent">
+                <h1>Gallery</h1>
+            </div>
+            
             <div class="row">
-                <div class="col-12 col-sm-4 mb-3">
-                    <img class="img-fluid" src="img/seoul-gallery.jpg" alt="">
+                <div class="crop col-12 col-sm-6 col-lg-4 mb-3 imgContent text-center">
+                    <img class="img" src="img/seoul-gallery.jpg" alt="">
+                    <a role="button" class="btn btn-outline-success btn- mt-3" href="#">KOREA</a>
                 </div>
-                <div class="col-12 col-sm-4">
-                    <img class="img-fluid" src="img/seoul-gallery.jpg" alt="">
+                <div class="crop col-12 col-sm-6 col-lg-4 mb-3">
+                    <img class="img" src="img/shanghai-gallery.jpg" alt="">
                 </div>
-                <div class="col-12 col-sm-4">
-                    <img class="img-fluid" src="img/seoul-gallery.jpg" alt="">
+                <div class="crop col-12 col-sm-6 col-lg-4 mb-3">
+                    <img class="img" src="img/sydney-gallery.jpg" alt="">
                 </div>
-                <div class="col">
-                    <img class="img-fluid" src="img/seoul-gallery.jpg" alt="">
+                <div class="crop col-12 col-sm-6 col-lg-4 mb-3">
+                    <img class="img" src="img/tokyo-gallery.jpg" alt="">
                 </div>
-                <div class="col">
-                    <img class="img-fluid" src="img/seoul-gallery.jpg" alt="">
+                <div class="crop col-12 col-sm-6 col-lg-4 mb-3">
+                    <img class="img" src="img/capitol-gallery.jpg" alt="">
                 </div>
-                <div class="col">
-                    <img class="img-fluid" src="img/seoul-gallery.jpg" alt="">
+                <div class="crop col-12 col-sm-6 col-lg-4 mb-3">
+                    <img class="img" src="img/berlin-gallery.jpg" alt="">
                 </div>
             </div>
         </div>
+
+        <footer class="site-footer pt-4">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1 my-auto">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled"> 
+                        <li> <a href="index.html">Home</a> </li>
+                        <li> <a href="about.html">About Us</a> </li>
+                        <li> <a href="gallery.html">Gallery</a ></li>
+                        <li> <a href="contact.html">Contact Us</a> </li>
+                        <li> <a href="signin.html">Sign Up/Login</a> </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center my-auto">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="https://instagram.com"><i class="fa fa-instagram"></i> </a>
+                    <a class="btn btn-social-icon btn-facebook" href="https://facebook.com"><i class="fa fa-facebook"></i> </a>
+                    <a class="btn btn-social-icon btn-twitter" href="https://twitter.com"><i class="fa fa-twitter"></i> </a>
+                    <a class="btn btn-social-icon btn-google" href="https://youtube.com"><i class="fa fa-youtube"></i> </a>
+                </div>
+                <div class="col-sm-4 text-center my-auto pr-0">
+                    <a role="button" class="btn btn-link infoTextContent" href="tel:+01234567890"> <i class="fa fa-phone fa-lg text-info"> </i> 0-123-456-7890 </a> <br />
+                    <a role="button" class="btn btn-link infoTextContent" href="mailto:contact@travelbug.com"> <i class="fa fa-envelope fa-la text-info"> </i> contact@travelbug.com </a>
+                </div>
+            </div>
+        </footer>
 
         <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
