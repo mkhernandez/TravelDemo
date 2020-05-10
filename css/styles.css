@@ -1,13 +1,10 @@
-html {
-    height: 100%;
-}
-
+/* body content css */
 body {
-    
     background-image: url(https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
-    background-size: cover;
-    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -17,22 +14,38 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
+.col-md-4 {
+    padding-top: 200px;
+    color: white;
+}
+
+.getStartedBtn {
+    background-color: #225eb3;
+    border-color: #225eb3;
+    color: whitesmoke;
+    border-radius: 21px;
+ }
+ 
+ .getStartedBtn:hover {
+     background-color: #7ab1ff;
+     border-color: #7ab1ff;
+ }
+
+/* navbar css */
 .navbar-light {
-    background-color: #8ad2ff;
-    
+    background-color: #225eb3;
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: whitesmoke;
 }
 
-.col-md-6 {
-    padding-top: 200px;
-    color: white;
+.navBtn {
+    border-radius: 21px;
+    color: whitesmoke;
 }
 
 .faIcon {
-    
     color: whitesmoke;
 }
 
@@ -40,23 +53,17 @@ hr {
     color:  whitesmoke !important;
 }
 
-.navBtn {
-    border-radius: 21px;
+button.navbar-toggler {
+    border: 0;
 }
 
-.getStartedBtn {
-   background-color: #8ad2ff;
-   border-color: #8ad2ff;
-   color: whitesmoke;
-}
-
-.getStartedBtn:hover {
-    background-color: #b0e1ff;
-    border-color: #b0e1ff;
+/* footer css */
+li a {
+    color: #225eb3;
 }
 
 .infoTextContent {
-    color: white;
+    color: seashell;
 }
 
 

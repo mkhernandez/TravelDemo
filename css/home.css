@@ -1,21 +1,10 @@
 /* body content css */
-html {
-    height: 100%;
-}
-
 body {
-    height: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h3 {
     border-bottom: 2px solid #80c5ff;
-}
-
-hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 .img-fluid {
@@ -28,8 +17,13 @@ hr {
 }
 
 /* navbar css */
+button.navbar-toggler {
+    border: 0;
+}
+
 .navbar-light {
     background-color: #225eb3;
+    
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -38,7 +32,6 @@ hr {
 
 .navBtn {
     border-radius: 21px;
-    color: whitesmoke;
 }
 
 .faIcon {
@@ -49,10 +42,24 @@ hr {
     color:  whitesmoke !important;
 }
 
-button.navbar-toggler {
-    border: 0;
+/* jumbotron css */
+.jumbotron {
+    background-image: url("../img/airport-man.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    color: #80c5ff;  
 }
 
+@media screen and (min-width: 576px){
+    body .jumbotron{
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+}
 
 /* footer css */
 li a {
@@ -67,3 +74,8 @@ li a {
 .infoTextContent {
     color: #225eb3;
 }
+
+
+
+
+

@@ -1,3 +1,8 @@
+/* body content css */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 hr {
     border: 0;
     height: 1px;
@@ -9,15 +14,43 @@ textarea {
 
 .card {
     width: 100%;
-    border-color: lightskyblue;
+    border-color: #80c5ff;
     border-top: 0;
 }
 
 .card-header {
-    background-color: lightskyblue;
-    border: lightskyblue;
+    background-color: #80c5ff;
+    border: #80c5ff;
     
 }
+
+/* navbar css */
+.navbar-light {
+    background-color: #225eb3;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: whitesmoke;
+}
+
 .navBtn {
     border-radius: 21px;
+    color: whitesmoke;
+}
+
+.faIcon {
+    color: whitesmoke;
+}
+
+.brand-content {
+    color:  whitesmoke !important;
+}
+
+button.navbar-toggler {
+    border: 0;
+}
+
+/* contact css */
+.infoTextContent {
+    color: #225eb3;
 }
