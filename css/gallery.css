@@ -1,3 +1,4 @@
+/* page content */
 html {
     height: 100%;
 }
@@ -6,40 +7,64 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
 .galleryContent {
     border-bottom: 1px ridge lightskyblue;
     padding-bottom: 0.75rem;
 }
-
-/* .imgContent {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    vertical-align: middle;
-    background-size: cover;
-    background-size: 100% 100%;
-    
-} */
 
 .crop {
     height: 400px;
     overflow: hidden;
 }
 
-.crop img {
-    float: left;
-    height: 300px;
-    width: 100%;
-}
-
 .crop .img-thumbnail {
     float: left;
     height: 300px;
     width: 100%;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 3px 5px 10px #888888;
+}
+
+/* navbar css */
+.navbar-light {
+    background-color: #225eb3;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: whitesmoke;
 }
 
 .navBtn {
     border-radius: 21px;
+    color: whitesmoke;
+}
+
+.faIcon {
+    color: whitesmoke;
+}
+
+.brand-content {
+    color:  whitesmoke !important;
+}
+
+button.navbar-toggler {
+    border: 0;
+}
+
+/* footer css */
+li a {
+    color: #225eb3;
+}
+
+.infoTextContent {
+    color: #a7b8d4;
 }
 
 .site-footer {
