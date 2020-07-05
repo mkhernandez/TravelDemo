@@ -1,7 +1,7 @@
-const el = document.getElementsByClassName('btn-outline-success');
+const el = document.querySelector("btn-outline-success");
 
-el.addEventListener('onclick', changeColor);
+el.addEventListener('click', changeColor);
 
 function changeColor() {
-    el.style.background-color = '#f5f9ff';
+    
 }

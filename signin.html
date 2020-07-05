@@ -4,14 +4,14 @@
         <!-- Required meta tags always come first -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Bootstrap CSS -->
+        <!-- build:css css/main.css -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
+        <!-- Additional CSS must be placed after Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
         <link rel="stylesheet" href="css/signin.css" />
-        <script type="text/javascript" src="js/scripts.js"></script>
+        <!-- endbuild -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
         <title>Travel App Demo</title>
 
     </head>
@@ -90,6 +90,7 @@
                 <div class="col-sm-12 col-md-6 imgContent px-0">
                     <img class="img-fluid" src="img/signUpPageImage.jpg" alt="signup page image">
                 </div>
+                <!-- older version of code  -->
                 <!-- <div class="col-12 col-sm-3 align-items-center d-flex">
                     <div class="col-4 px-0">
                         <hr>
@@ -155,9 +156,12 @@
             </div>
         </div>
 
+        <!-- build:js js/main.js -->
         <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <!-- endbuild -->
     </body>
 </html>

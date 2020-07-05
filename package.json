@@ -4,7 +4,12 @@
   "description": "Travel app demo",
   "main": "index.html",
   "scripts": {
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* -o dist/img",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "usemin": "usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin gallery.html -d dist --htmlmin -o dist/gallery.html && usemin home.html -d dist --htmlmin -o dist/home.html && usemin korea.html -d dist --htmlmin -o dist/korea.html && usemin shanghai.html -d dist --htmlmin -o dist/shanghai.html && usemin sydney.html -d dist --htmlmin -o dist/sydney.html && usemin tokyo.html -d dist --htmlmin -o dist/tokyo.html && usemin washington.html -d dist --htmlmin -o dist/washington.html && usemin berlin.html -d dist --htmlmin -o dist/berlin.hmtl",
     "start": "npm run watch:all",
     "lite": "lite-server",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
@@ -13,9 +18,13 @@
   "author": "Mark Hernandez",
   "license": "ISC",
   "devDependencies": {
+    "copyfiles": "^2.0.0",
+    "imagemin-cli": "^3.0.0",
     "lite-server": "^2.3.0",
     "onchange": "^3.3.0",
-    "parallelshell": "^3.0.1"
+    "parallelshell": "^3.0.1",
+    "rimraf": "^2.6.2",
+    "usemin-cli": "^0.5.1"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
