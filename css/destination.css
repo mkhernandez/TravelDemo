@@ -80,8 +80,9 @@ li a {
     background-color: #f5f9ff;
 }
 
-.btn-outline-success:click {
-    ba
+.destination {
+    border-color: #80c5ff;
+    color: #80c5ff;
 }
 
 @media (min-width: 576px) {
